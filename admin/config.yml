@@ -38,7 +38,7 @@ collections:
               - { name: titre, label: "Titre", widget: string }
               - { name: categorie, label: "Catégorie", widget: string, default: "Information", hint: "Ex. : Information, Prévention, Sécurité, Cadre de vie…" }
               - { name: alerte, label: "Mettre en avant comme alerte", widget: boolean, default: false, required: false }
-              - { name: date, label: "Date", widget: date, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+              - { name: date, label: "Date", widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
               - { name: texte, label: "Texte", widget: text }
               - { name: lien_label, label: "Texte du bouton (optionnel)", widget: string, required: false }
               - { name: lien_url, label: "Lien du bouton (optionnel)", widget: string, required: false, default: "#contact", hint: "Laisser #contact pour renvoyer vers la mairie." }
