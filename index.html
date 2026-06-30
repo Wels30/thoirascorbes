@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Site officiel de la commune nouvelle de Thoiras-Corbès (Gard, 30140), au cœur des Cévennes. Démarches en ligne, actualités, horaires des mairies, médiathèque, urbanisme et vie locale." />
+  <meta name="theme-color" content="#1B2A21" />
+  <title>Thoiras-Corbès — Commune nouvelle des Cévennes · Gard</title>
+
+  <!-- Fonts — Libre Caslon (serif officiel / patrimonial) + Instrument Sans (UI humaniste) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <!-- ===== BARRE OFFICIELLE ===== -->
+  <div class="gov-bar">
+    <div class="container gov-bar-inner">
+      <span class="gov-rf">
+        <span class="tricolore" aria-hidden="true"><i></i><i></i><i></i></span>
+        République Française
+      </span>
+      <span class="gov-meta">Commune nouvelle · Département du Gard (30) · Cévennes</span>
+      <div class="gov-actions">
+        <a href="tel:0466616282" class="gov-phone">04&nbsp;66&nbsp;61&nbsp;62&nbsp;82</a>
+        <button class="contrast-toggle" type="button" aria-pressed="false" aria-label="Activer le contraste renforcé">
+          <span class="ct-dot" aria-hidden="true"></span> Contraste
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header id="navbar" aria-label="En-tête du site">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand" aria-label="Accueil — Mairie de Thoiras-Corbès">
+        <span class="brand-seal" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 3 41 9v13c0 12-8.4 18.7-17 23-8.6-4.3-17-11-17-23V9z"/>
+            <path d="M9 27c4-5 7-5 9.5-1.8C21 21 24 21 26.5 25c2.5-4 5.5-4 9.5 1.8"/>
+            <path d="M9 33c4-4.5 7-4.5 9.5-1.5 2.5-3.6 5.5-3.6 8 0 2.5-3.6 5.5-3.6 9.5 1.5"/>
+            <path d="M24 9v8M24 9c-2.4 1.2-3.4 3.4-2 6 1.4-.6 2.4-2.4 2-6Zm0 0c2.4 1.2 3.4 3.4 2 6-1.4-.6-2.4-2.4-2-6Z"/>
+          </svg>
+        </span>
+        <span class="brand-word">
+          <strong>Thoiras<span class="brand-dot">·</span>Corbès</strong>
+          <small>Commune nouvelle des Cévennes</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <ul role="list">
+          <li><a href="#commune">La commune</a></li>
+          <li><a href="#demarches">Démarches</a></li>
+          <li><a href="#actualites">Actualités</a></li>
+          <li><a href="#vie-pratique">Vie pratique</a></li>
+          <li><a href="#tourisme">Tourisme</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-primary">Nous contacter</a>
+      </div>
+
+      <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu de navigation" aria-modal="true">
+    <a href="#commune">La commune</a>
+    <a href="#demarches">Démarches</a>
+    <a href="#actualites">Actualités</a>
+    <a href="#vie-pratique">Vie pratique</a>
+    <a href="#tourisme">Tourisme</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn-primary" style="margin-top:1.25rem">Nous contacter</a>
+  </div>
+
+  <!-- ===== BANDEAU D'ALERTE (service public) ===== -->
+  <aside class="alert-bar" role="region" aria-label="Information importante">
+    <div class="container alert-inner">
+      <span class="alert-tag">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        Vigilance sécheresse
+      </span>
+      <p>Restrictions d'usage de l'eau en vigueur dans le Gard — des coupures ponctuelles d'eau potable sont possibles.
+        <a href="#actualites">Consulter les mesures</a>
+      </p>
+      <button class="alert-close" type="button" aria-label="Fermer cette alerte">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" aria-label="Présentation de la commune">
+    <!-- Signature : lignes de niveau topographiques (carte d'état-major des Cévennes) -->
+    <svg class="hero-contours" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width="1">
+        <path class="ctr" d="M-50,640 C200,600 340,650 520,610 760,556 900,612 1120,560 1300,520 1420,556 1500,540"/>
+        <path class="ctr" d="M-50,560 C180,512 360,556 540,512 760,458 940,520 1140,470 1320,428 1430,462 1500,448"/>
+        <path class="ctr" d="M-50,486 C160,440 380,476 560,432 770,382 980,440 1180,392 1340,356 1440,386 1500,374"/>
+        <path class="ctr" d="M-50,418 C200,378 400,408 580,366 800,316 1010,372 1210,330 1360,300 1450,326 1500,316"/>
+        <path class="ctr" d="M-50,356 C220,322 420,346 600,308 820,262 1040,312 1240,276 1380,252 1455,272 1500,266"/>
+        <path class="ctr" d="M-50,300 C240,272 440,290 620,258 840,218 1060,260 1260,230 1390,212 1460,226 1500,222"/>
+        <path class="ctr" d="M-50,250 C260,228 460,242 640,214 860,180 1080,214 1280,190 1400,176 1465,186 1500,184"/>
+      </g>
+    </svg>
+    <div class="hero-grain" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <p class="hero-eyebrow">
+        <span class="seal-mark" aria-hidden="true"></span>
+        Commune nouvelle · Cévennes · Gard 30140
+      </p>
+      <h1 class="hero-title">
+        <span class="ht-line">Thoiras</span>
+        <span class="ht-amp" aria-hidden="true">
+          <svg viewBox="0 0 80 40" width="76" height="38" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M4 20h26"/><path d="M50 20h26"/><circle cx="40" cy="20" r="6"/></svg>
+        </span>
+        <span class="ht-line">Corbès</span>
+      </h1>
+      <p class="hero-sub">
+        Deux villages, une seule commune au cœur du Parc national des Cévennes.
+        Retrouvez vos démarches, l'actualité locale et les services de votre mairie.
+      </p>
+      <div class="hero-actions">
+        <a href="#demarches" class="btn btn-primary btn-lg">Mes démarches en ligne</a>
+        <a href="#contact" class="btn btn-ghost btn-lg">Horaires &amp; contact</a>
+      </div>
+
+      <dl class="hero-facts">
+        <div><dt>Villages</dt><dd>Thoiras &amp; Corbès</dd></div>
+        <div><dt>Département</dt><dd>Gard&nbsp;(30)</dd></div>
+        <div><dt>Code postal</dt><dd>30140</dd></div>
+        <div><dt>Territoire</dt><dd>Alès Agglomération</dd></div>
+      </dl>
+    </div>
+
+    <a href="#demarches" class="hero-scroll" aria-label="Faire défiler vers les services">
+      <span>Découvrir</span>
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="6 13 12 19 18 13"/></svg>
+    </a>
+  </section>
+
+  <!-- ===== DÉMARCHES / ACCÈS RAPIDE ===== -->
+  <section id="demarches" aria-labelledby="demarches-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow"><span class="eyebrow-bar"></span>Accès rapide</p>
+        <h2 id="demarches-title" class="display">Vos démarches, simplifiées</h2>
+        <p class="section-lead">L'essentiel des services de la mairie, accessibles en quelques clics — sur place ou en ligne.</p>
+      </div>
+
+      <div class="service-grid">
+        <a class="service-card reveal" href="#contact">
+          <span class="sc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <h3>État civil</h3>
+          <p>Actes de naissance, mariage, décès, livret de famille et recensement citoyen.</p>
+          <span class="sc-link">Faire ma demande →</span>
+        </a>
+
+        <a class="service-card reveal" href="#vie-pratique">
+          <span class="sc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span>
+          <h3>Urbanisme</h3>
+          <p>Permis de construire, déclarations préalables, plan local d'urbanisme et cadastre.</p>
+          <span class="sc-link">Consulter →</span>
+        </a>
+
+        <a class="service-card reveal" href="#actualites">
+          <span class="sc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7c-3 4-6 6.6-6 10.3a6 6 0 0 0 12 0c0-3.7-3-6.3-6-10.3Z"/></svg></span>
+          <h3>Eau &amp; assainissement</h3>
+          <p>Contrôle des installations, prélèvements d'eau, raccordements et restrictions.</p>
+          <span class="sc-link">En savoir plus →</span>
+        </a>
+
+        <a class="service-card reveal" href="#mediatheque">
+          <span class="sc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>
+          <h3>Médiathèque</h3>
+          <p>« Le Micocoulier » — prêt de livres, espace lecture et animations pour tous.</p>
+          <span class="sc-link">Horaires &amp; catalogue →</span>
+        </a>
+
+        <a class="service-card reveal" href="#vie-pratique">
+          <span class="sc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <h3>Signaler un problème</h3>
+          <p>Voirie, éclairage, dépôt sauvage : signalez un incident sur la commune.</p>
+          <span class="sc-link">Signaler →</span>
+        </a>
+
+        <a class="service-card service-card--accent reveal" href="https://www.illiwap.com" target="_blank" rel="noopener">
+          <span class="sc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></span>
+          <h3>Alertes illiwap</h3>
+          <p>Recevez les alertes de la commune en temps réel sur votre téléphone, gratuitement.</p>
+          <span class="sc-link">Installer l'application →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LA COMMUNE — deux villages ===== -->
+  <section id="commune" class="section-dark" aria-labelledby="commune-title">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow eyebrow--light"><span class="eyebrow-bar"></span>La commune nouvelle</p>
+        <h2 id="commune-title" class="display display--light">Deux villages,<br /><em>une histoire commune</em></h2>
+        <p class="section-lead section-lead--light">Nichée entre châtaigneraies et bords du Gardon, Thoiras-Corbès réunit deux communes cévenoles qui ont choisi d'avancer ensemble, tout en préservant l'âme de chaque village.</p>
+      </div>
+
+      <div class="village-diptych">
+        <article class="village reveal">
+          <header class="village-head">
+            <span class="village-num">01</span>
+            <h3>Thoiras</h3>
+            <p class="village-loc">Le Puech · Mairie principale</p>
+          </header>
+          <p>Village étiré sur les contreforts cévenols, Thoiras rassemble hameaux, école et la médiathèque communale. C'est ici que bat le cœur administratif de la commune.</p>
+          <ul class="village-meta">
+            <li><span>Mairie</span> 44 Chemin des Écoles — Le Puech</li>
+            <li><span>Téléphone</span> <a href="tel:0466616282">04 66 61 62 82</a></li>
+            <li><span>Courriel</span> <a href="mailto:mairie@thoirascorbes.fr">mairie@thoirascorbes.fr</a></li>
+          </ul>
+        </article>
+
+        <div class="village-link" aria-hidden="true">
+          <span class="vl-line"></span>
+          <span class="vl-river"></span>
+          <span class="vl-line"></span>
+        </div>
+
+        <article class="village reveal">
+          <header class="village-head">
+            <span class="village-num">02</span>
+            <h3>Corbès</h3>
+            <p class="village-loc">Mairie annexe</p>
+          </header>
+          <p>Accroché au-dessus des gorges, Corbès séduit par ses points de vue et son patrimoine de pierre. La mairie annexe y maintient un accueil de proximité pour tous les habitants.</p>
+          <ul class="village-meta">
+            <li><span>Mairie</span> 199 impasse de la Mairie</li>
+            <li><span>Téléphone</span> <a href="tel:0962023416">09 62 02 34 16</a></li>
+            <li><span>Courriel</span> <a href="mailto:annexemairie@thoirascorbes.fr">annexemairie@thoirascorbes.fr</a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACTUALITÉS / ALERTES ===== -->
+  <section id="actualites" aria-labelledby="actu-title">
+    <div class="container">
+      <div class="section-head section-head--split">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-bar"></span>Informations</p>
+          <h2 id="actu-title" class="display">Actualités &amp; alertes</h2>
+        </div>
+        <p class="section-lead">Sécurité, environnement, vie quotidienne : l'essentiel des informations municipales, mis à jour régulièrement.</p>
+      </div>
+
+      <div class="news-grid">
+        <article class="news-card news-card--alert reveal">
+          <div class="news-top">
+            <span class="news-cat news-cat--alert">Alerte</span>
+            <time datetime="2026-06">Juin 2026</time>
+          </div>
+          <h3>Restrictions d'usage de l'eau</h3>
+          <p>En raison de la sécheresse, des restrictions sont en vigueur dans le Gard. Limitez votre consommation : arrosage, lavage et remplissage sont réglementés.</p>
+          <a class="news-link" href="#contact">Mesures &amp; conseils</a>
+        </article>
+
+        <article class="news-card reveal">
+          <div class="news-top">
+            <span class="news-cat">Prévention</span>
+            <time datetime="2026-06">Juin 2026</time>
+          </div>
+          <h3>Obligation de débroussaillement</h3>
+          <p>Pour prévenir les incendies, le débroussaillement autour des habitations est obligatoire. Vérifiez votre périmètre avant l'été.</p>
+          <a class="news-link" href="#contact">Connaître mes obligations</a>
+        </article>
+
+        <article class="news-card reveal">
+          <div class="news-top">
+            <span class="news-cat">Sécurité</span>
+            <time datetime="2026-06">Juin 2026</time>
+          </div>
+          <h3>Vigilance démarchage abusif</h3>
+          <p>Des démarcheurs se présentent au nom de la commune. En cas de doute, ne signez rien et contactez la mairie pour vérifier.</p>
+          <a class="news-link" href="#contact">Que faire ?</a>
+        </article>
+
+        <article class="news-card reveal">
+          <div class="news-top">
+            <span class="news-cat">Cadre de vie</span>
+            <time datetime="2026-05">Mai 2026</time>
+          </div>
+          <h3>Cadastre solaire d'Alès Agglomération</h3>
+          <p>Estimez gratuitement le potentiel solaire de votre toiture grâce au cadastre solaire mis à disposition par l'agglomération.</p>
+          <a class="news-link" href="#contact">Tester mon toit</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIE PRATIQUE ===== -->
+  <section id="vie-pratique" class="section-stone" aria-labelledby="vp-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow"><span class="eyebrow-bar"></span>Au quotidien</p>
+        <h2 id="vp-title" class="display">Vie pratique &amp; services</h2>
+        <p class="section-lead">Tout ce qui fait vivre la commune : culture, associations, commerces et entraide de proximité.</p>
+      </div>
+
+      <div class="practical-grid">
+        <article id="mediatheque" class="practical-feature reveal">
+          <p class="pf-eyebrow">Culture</p>
+          <h3>Médiathèque « Le Micocoulier »</h3>
+          <p>Un lieu chaleureux pour lire, emprunter, découvrir et se rencontrer. Romans, jeunesse, presse et animations tout au long de l'année, ouverts à tous les habitants.</p>
+          <table class="hours-mini">
+            <tbody>
+              <tr><td>Mardi</td><td>10h30 – 12h00</td></tr>
+              <tr><td>Mercredi</td><td>14h30 – 16h30</td></tr>
+              <tr><td>Jeudi</td><td>14h30 – 16h30</td></tr>
+            </tbody>
+          </table>
+          <a class="news-link" href="mailto:mediatheque@thoirascorbes.fr">mediatheque@thoirascorbes.fr</a>
+        </article>
+
+        <div class="practical-col">
+          <article class="practical-card reveal">
+            <span class="pc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <div>
+              <h3>Associations</h3>
+              <p>L'annuaire des associations locales — culture, sport, patrimoine et entraide.</p>
+            </div>
+          </article>
+          <article class="practical-card reveal">
+            <span class="pc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 5 3h14l2 6"/><path d="M3 9v11a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9"/><path d="M3 9h18"/><path d="M9 21v-6h6v6"/></svg></span>
+            <div>
+              <h3>Entreprises &amp; commerces</h3>
+              <p>Inscription gratuite des entreprises et artisans à l'annuaire de la commune.</p>
+            </div>
+          </article>
+          <article class="practical-card reveal">
+            <span class="pc-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+            <div>
+              <h3>Conseil municipal</h3>
+              <p>Comptes-rendus, délibérations et calendrier des séances publiques.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOURISME ===== -->
+  <section id="tourisme" class="section-dark" aria-labelledby="tour-title">
+    <svg class="tour-contours" viewBox="0 0 1440 400" preserveAspectRatio="none" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width="1">
+        <path d="M0,300 C240,260 480,300 720,250 960,200 1200,250 1440,210"/>
+        <path d="M0,330 C240,296 480,330 720,286 960,242 1200,288 1440,252"/>
+        <path d="M0,358 C240,330 480,356 720,318 960,280 1200,320 1440,290"/>
+      </g>
+    </svg>
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow eyebrow--light"><span class="eyebrow-bar"></span>Tourisme</p>
+        <h2 id="tour-title" class="display display--light">Au cœur des Cévennes</h2>
+        <p class="section-lead section-lead--light">Entre gorges du Gardon, châtaigneraies et sentiers du Parc national, Thoiras-Corbès est une porte d'entrée vers une nature préservée, classée au patrimoine mondial de l'UNESCO.</p>
+      </div>
+
+      <div class="tour-grid">
+        <article class="tour-card reveal">
+          <span class="tour-num">Parc national</span>
+          <h3>Parc national des Cévennes</h3>
+          <p>Un territoire d'exception au paysage façonné par l'homme et la nature. Découvrez la Charte du Parc et les gestes pour préserver ce patrimoine.</p>
+        </article>
+        <article class="tour-card reveal">
+          <span class="tour-num">Séjourner</span>
+          <h3>Hébergements &amp; camping</h3>
+          <p>Gîtes, chambres d'hôtes et campings nichés dans la verdure pour profiter pleinement de la quiétude cévenole.</p>
+        </article>
+        <article class="tour-card reveal">
+          <span class="tour-num">Découvrir</span>
+          <h3>Sentiers &amp; baignade</h3>
+          <p>Randonnées, vasques du Gardon et points de vue : une invitation permanente à explorer le territoire à pied.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / HORAIRES ===== -->
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-head section-head--split">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-bar"></span>Nous trouver</p>
+          <h2 id="contact-title" class="display">Horaires &amp; contact</h2>
+        </div>
+        <p class="section-lead">Deux accueils à votre service. Pour toute démarche, n'hésitez pas à nous appeler ou à passer en mairie.</p>
+      </div>
+
+      <div class="contact-grid">
+        <article class="mairie-card reveal">
+          <div class="mairie-head">
+            <h3>Mairie de Thoiras</h3>
+            <span class="mairie-tag">Mairie principale</span>
+          </div>
+          <address>
+            <p class="mairie-addr">44 Chemin des Écoles — Le Puech<br />30140 Thoiras</p>
+            <p class="mairie-line"><a href="tel:0466616282">04 66 61 62 82</a></p>
+            <p class="mairie-line"><a href="mailto:mairie@thoirascorbes.fr">mairie@thoirascorbes.fr</a></p>
+          </address>
+          <table class="hours-table">
+            <caption>Horaires d'ouverture</caption>
+            <tbody>
+              <tr><td>Lundi</td><td>14h00 – 17h00</td></tr>
+              <tr><td>Mardi</td><td>09h00 – 12h00</td></tr>
+              <tr><td>Mercredi</td><td>14h00 – 17h00</td></tr>
+              <tr><td>Jeudi</td><td>09h00 – 12h00</td></tr>
+              <tr><td>Vendredi</td><td>14h00 – 17h00</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article class="mairie-card reveal">
+          <div class="mairie-head">
+            <h3>Mairie de Corbès</h3>
+            <span class="mairie-tag mairie-tag--alt">Mairie annexe</span>
+          </div>
+          <address>
+            <p class="mairie-addr">199 impasse de la Mairie<br />30140 Corbès</p>
+            <p class="mairie-line"><a href="tel:0962023416">09 62 02 34 16</a></p>
+            <p class="mairie-line"><a href="mailto:annexemairie@thoirascorbes.fr">annexemairie@thoirascorbes.fr</a></p>
+          </address>
+          <table class="hours-table">
+            <caption>Horaires d'ouverture</caption>
+            <tbody>
+              <tr><td>Mardi</td><td>10h00 – 12h00 &amp; 13h00 – 17h00</td></tr>
+              <tr><td>Jeudi</td><td>10h00 – 12h00 &amp; 13h00 – 17h00</td></tr>
+              <tr class="is-muted"><td>Autres jours</td><td>Sur rendez-vous</td></tr>
+            </tbody>
+          </table>
+        </article>
+
+        <aside class="contact-aside reveal">
+          <h3>Une question ?</h3>
+          <p>L'accueil de la mairie principale répond à vos demandes du lundi au vendredi.</p>
+          <a href="tel:0466616282" class="btn btn-primary btn-block">Appeler la mairie</a>
+          <a href="mailto:mairie@thoirascorbes.fr" class="btn btn-ghost btn-block">Envoyer un courriel</a>
+          <div class="aside-illiwap">
+            <strong>Restez informé</strong>
+            <p>Téléchargez <a href="https://www.illiwap.com" target="_blank" rel="noopener">illiwap</a> pour recevoir les alertes de la commune.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer aria-label="Pied de page">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-rf">
+            <span class="tricolore" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>République<br />Française</span>
+          </div>
+          <p class="footer-devise">Liberté · Égalité · Fraternité</p>
+          <p class="footer-name">Mairie de Thoiras-Corbès</p>
+          <p class="footer-addr">44 Chemin des Écoles — Le Puech<br />30140 Thoiras · Gard</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Plan du site">
+          <div>
+            <h4>La commune</h4>
+            <ul role="list">
+              <li><a href="#commune">Présentation</a></li>
+              <li><a href="#actualites">Actualités</a></li>
+              <li><a href="#vie-pratique">Conseil municipal</a></li>
+              <li><a href="#vie-pratique">Associations</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <ul role="list">
+              <li><a href="#demarches">Démarches</a></li>
+              <li><a href="#demarches">Urbanisme</a></li>
+              <li><a href="#mediatheque">Médiathèque</a></li>
+              <li><a href="#demarches">Eau &amp; assainissement</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul role="list">
+              <li><a href="tel:0466616282">04 66 61 62 82</a></li>
+              <li><a href="mailto:mairie@thoirascorbes.fr">Nous écrire</a></li>
+              <li><a href="#contact">Horaires</a></li>
+              <li><a href="https://www.illiwap.com" target="_blank" rel="noopener">Alertes illiwap</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Commune nouvelle de Thoiras-Corbès — Tous droits réservés.</p>
+        <nav class="footer-legal" aria-label="Liens légaux">
+          <a href="#">Mentions légales</a>
+          <a href="#">Accessibilité : non conforme</a>
+          <a href="#">Données personnelles</a>
+          <a href="#">Gestion des cookies</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP 3.15 -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollToPlugin.min.js" defer></script>
+  <!-- Contenu éditable (actualités + alerte) — doit s'exécuter avant main.js -->
+  <script src="assets/js/content.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

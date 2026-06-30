@@ -1,0 +1,69 @@
+# =====================================================================
+# Configuration de l'espace d'administration (Sveltia CMS)
+# Documentation : https://github.com/sveltia/sveltia-cms
+#
+# >>> À COMPLÉTER AVANT MISE EN LIGNE (voir GUIDE-ADMIN.md) <<<
+#   - repo      : votre dépôt GitHub  (ex. mairie-thoirascorbes/site)
+#   - base_url  : l'adresse de votre service d'authentification Cloudflare
+# =====================================================================
+
+backend:
+  name: github
+  repo: VOTRE-COMPTE-GITHUB/thoirascorbes   # TODO
+  branch: main
+  base_url: https://VOTRE-AUTH.workers.dev   # TODO (worker sveltia-cms-auth)
+
+# Interface en français
+locale: fr
+
+# Message affiché lors de l'enregistrement (commit Git)
+automatic_deployments: true
+
+# Dossier pour d'éventuelles images jointes
+media_folder: "assets/img/actualites"
+public_folder: "/assets/img/actualites"
+
+collections:
+  # ---------------------------------------------------------------
+  # ACTUALITÉS — la mairie ajoute / modifie / supprime ses news
+  # ---------------------------------------------------------------
+  - name: actualites
+    label: "Actualités"
+    icon: article
+    files:
+      - name: liste
+        label: "Liste des actualités"
+        file: "assets/data/news.json"
+        description: "Ajoutez, modifiez ou supprimez les actualités affichées sur le site."
+        fields:
+          - name: items
+            label: "Actualités"
+            label_singular: "Actualité"
+            widget: list
+            summary: "{{fields.titre}}"
+            fields:
+              - { name: titre, label: "Titre", widget: string }
+              - { name: categorie, label: "Catégorie", widget: string, default: "Information", hint: "Ex. : Information, Prévention, Sécurité, Cadre de vie…" }
+              - { name: alerte, label: "Mettre en avant comme alerte", widget: boolean, default: false, required: false }
+              - { name: date, label: "Date", widget: date, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+              - { name: texte, label: "Texte", widget: text }
+              - { name: lien_label, label: "Texte du bouton (optionnel)", widget: string, required: false }
+              - { name: lien_url, label: "Lien du bouton (optionnel)", widget: string, required: false, default: "#contact", hint: "Laisser #contact pour renvoyer vers la mairie." }
+
+  # ---------------------------------------------------------------
+  # PARAMÈTRES — bandeau d'alerte en haut du site
+  # ---------------------------------------------------------------
+  - name: parametres
+    label: "Paramètres du site"
+    icon: settings
+    files:
+      - name: alerte
+        label: "Bandeau d'alerte"
+        file: "assets/data/site.json"
+        description: "Le bandeau orange affiché tout en haut du site."
+        fields:
+          - { name: alerte_active, label: "Afficher le bandeau d'alerte", widget: boolean, default: true }
+          - { name: alerte_tag, label: "Étiquette", widget: string, hint: "Ex. : Vigilance sécheresse" }
+          - { name: alerte_texte, label: "Message", widget: text }
+          - { name: alerte_lien_label, label: "Texte du lien (optionnel)", widget: string, required: false }
+          - { name: alerte_lien_url, label: "Lien (optionnel)", widget: string, required: false, default: "#actualites" }

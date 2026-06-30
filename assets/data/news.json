@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "titre": "Restrictions d'usage de l'eau",
+      "categorie": "Alerte",
+      "alerte": true,
+      "date": "2026-06-01",
+      "texte": "En raison de la sécheresse, des restrictions sont en vigueur dans le Gard. Limitez votre consommation : arrosage, lavage et remplissage sont réglementés.",
+      "lien_label": "Mesures & conseils",
+      "lien_url": "#contact"
+    },
+    {
+      "titre": "Obligation de débroussaillement",
+      "categorie": "Prévention",
+      "alerte": false,
+      "date": "2026-06-01",
+      "texte": "Pour prévenir les incendies, le débroussaillement autour des habitations est obligatoire. Vérifiez votre périmètre avant l'été.",
+      "lien_label": "Connaître mes obligations",
+      "lien_url": "#contact"
+    },
+    {
+      "titre": "Vigilance démarchage abusif",
+      "categorie": "Sécurité",
+      "alerte": false,
+      "date": "2026-06-01",
+      "texte": "Des démarcheurs se présentent au nom de la commune. En cas de doute, ne signez rien et contactez la mairie pour vérifier.",
+      "lien_label": "Que faire ?",
+      "lien_url": "#contact"
+    },
+    {
+      "titre": "Cadastre solaire d'Alès Agglomération",
+      "categorie": "Cadre de vie",
+      "alerte": false,
+      "date": "2026-05-01",
+      "texte": "Estimez gratuitement le potentiel solaire de votre toiture grâce au cadastre solaire mis à disposition par l'agglomération.",
+      "lien_label": "Tester mon toit",
+      "lien_url": "#contact"
+    }
+  ]
+}

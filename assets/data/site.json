@@ -1,0 +1,7 @@
+{
+  "alerte_active": true,
+  "alerte_tag": "Vigilance sécheresse",
+  "alerte_texte": "Restrictions d'usage de l'eau en vigueur dans le Gard — des coupures ponctuelles d'eau potable sont possibles.",
+  "alerte_lien_label": "Consulter les mesures",
+  "alerte_lien_url": "#actualites"
+}
