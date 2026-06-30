@@ -35,15 +35,6 @@
       "texte": "Estimez gratuitement le potentiel solaire de votre toiture grâce au cadastre solaire mis à disposition par l'agglomération.",
       "lien_label": "Tester mon toit",
       "lien_url": "#contact"
-    },
-    {
-      "titre": "Claude a fait le site , L'IA arrive !",
-      "categorie": "Technologie",
-      "alerte": false,
-      "date": "2026-06-30",
-      "texte": "Serai-ce l'avenir des IA de pouvoir crée un site aussi rapidement et d'une qualité folle ? Claude a reussit cette exploit .",
-      "lien_label": "",
-      "lien_url": ""
     }
   ]
 }
