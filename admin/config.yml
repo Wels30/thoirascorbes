@@ -1,23 +1,16 @@
 # =====================================================================
 # Configuration de l'espace d'administration (Sveltia CMS)
 # Documentation : https://github.com/sveltia/sveltia-cms
-#
-# >>> À COMPLÉTER AVANT MISE EN LIGNE (voir GUIDE-ADMIN.md) <<<
-#   - repo      : votre dépôt GitHub  (ex. mairie-thoirascorbes/site)
-#   - base_url  : l'adresse de votre service d'authentification Cloudflare
 # =====================================================================
 
 backend:
   name: github
-  repo: VOTRE-COMPTE-GITHUB/thoirascorbes   # TODO
+  repo: Wels30/thoirascorbes
   branch: main
-  base_url: https://VOTRE-AUTH.workers.dev   # TODO (worker sveltia-cms-auth)
+  base_url: https://sveltia-cms-auth.wilsonsn96.workers.dev
 
 # Interface en français
 locale: fr
-
-# Message affiché lors de l'enregistrement (commit Git)
-automatic_deployments: true
 
 # Dossier pour d'éventuelles images jointes
 media_folder: "assets/img/actualites"
